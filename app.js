@@ -33,6 +33,10 @@ $(document).ready(function(){
         }
         else{
             alert("You lost!");
+            for(var i=0; i< data.length; i++){
+                $("#"+i).attr('class',"");
+                $("#"+i).attr('class',"done");
+            }
         }
         counter +=1;
     });
